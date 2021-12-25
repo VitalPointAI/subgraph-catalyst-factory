@@ -1,15 +1,15 @@
 specVersion: 0.0.4
-description: DID registry
-repository: https://github.com/VitalPointAI/near-subgraph-template.git
+description: Catalyst Factory
+repository: https://github.com/VitalPointAI/subgraph-catalyst-factory.git
 schema:
   file: schema.graphql
 dataSources:
   - kind: near
     name: receipts
-    network: near-testnet
+    network: near-mainnet
     source:
-      account: factory1.vitalpointai.testnet
-      startBlock: 76376997
+      account: cdao.near
+      startBlock: 55980349
     mapping:
       apiVersion: 0.0.5
       language: wasm/assemblyscript

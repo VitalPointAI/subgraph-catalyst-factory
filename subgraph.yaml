@@ -1,15 +1,15 @@
 specVersion: 0.0.4
-description: Catalyst Factory TNet # the name of the subgraph
-repository: https://github.com/VitalPointAI/subgraph-catalyst-factory-testnet.git # repo where subgraph project is stored
+description: Catalyst Factory # the name of the subgraph
+repository: https://github.com/VitalPointAI/subgraph-catalyst-factory.git # repo where subgraph project is stored
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: near
     name: receipts # could also be blocks
-    network: near-testnet # can choose near-mainnet or near-testnet
+    network: near-mainnet # can choose near-mainnet or near-testnet
     source:
-      account: factory1.vitalpointai.testnet # contract account you want to pull data from
-      startBlock: 76376997 # starting block on near-mainnet for indexing
+      account: cdao.near # contract account you want to pull data from
+      startBlock: 55980349 # starting block on near-mainnet for indexing
     mapping:
       apiVersion: 0.0.5
       language: wasm/assemblyscript
