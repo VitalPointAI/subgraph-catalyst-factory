@@ -1,6 +1,6 @@
 specVersion: 0.0.4
 description: Catalyst Factory
-repository: https://github.com/VitalPointAI/subgraph-catalyst-factory.git
+repository: https://github.com/VitalPointAI/subgraph-catalyst-factory-mainnet.git
 schema:
   file: schema.graphql
 dataSources:
