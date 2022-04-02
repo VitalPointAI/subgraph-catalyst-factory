@@ -16,6 +16,7 @@ type CreateDAO @entity {
   standard: String
   version: String
   event: String
+  contractId: String
   did: String
   deposit: String
   status: String

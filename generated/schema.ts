@@ -314,6 +314,23 @@ export class CreateDAO extends Entity {
     }
   }
 
+  get contractId(): string | null {
+    let value = this.get("contractId");
+    if (!value || value.kind == ValueKind.NULL) {
+      return null;
+    } else {
+      return value.toString();
+    }
+  }
+
+  set contractId(value: string | null) {
+    if (!value) {
+      this.unset("contractId");
+    } else {
+      this.set("contractId", Value.fromString(<string>value));
+    }
+  }
+
   get did(): string | null {
     let value = this.get("did");
     if (!value || value.kind == ValueKind.NULL) {
